@@ -1,0 +1,331 @@
+{
+  "attributes":
+  {
+    "absolutePath": "outputV2.txt",
+    "exportedSymbols":
+    {
+      "sample":
+      [
+        32
+      ]
+    }
+  },
+  "children":
+  [
+    {
+      "attributes":
+      {
+        "literals":
+        [
+          "solidity",
+          "0.6",
+          ".2"
+        ]
+      },
+      "name": "PragmaDirective",
+      "src": "0:22:0"
+    },
+    {
+      "attributes":
+      {
+        "baseContracts":
+        [
+          null
+        ],
+        "contractDependencies":
+        [
+          null
+        ],
+        "contractKind": "contract",
+        "name": "sample"
+      },
+      "children":
+      [
+        {
+          "attributes":
+          {
+            "name": "x",
+            "type": "int256",
+            "value": null,
+            "visibility": "internal"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "name": "int",
+                "type": "int256"
+              },
+              "name": "ElementaryTypeName"
+            }
+          ],
+          "name": "VariableDeclaration"
+        },
+        {
+          "attributes":
+          {
+            "kind": "constructor",
+            "name": "",
+            "overrides": null,
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "name": "ParameterList"
+            },
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "operator": "=",
+                        "type": "int256"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "type": "int256",
+                            "value": "x"
+                          },
+                          "name": "Identifier"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "value": "1"
+                          },
+                          "name": "Literal"
+                        }
+                      ],
+                      "name": "Assignment"
+                    }
+                  ],
+                  "name": "ExpressionStatement"
+                }
+              ],
+              "name": "Block"
+            }
+          ],
+          "name": "FunctionDefinition"
+        },
+        {
+          "attributes":
+          {
+            "kind": "function",
+            "name": "getX",
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "",
+                    "type": "int256",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "type": "int256",
+                        "value": "x"
+                      },
+                      "name": "Identifier"
+                    }
+                  ],
+                  "name": "Return"
+                }
+              ],
+              "name": "Block"
+            }
+          ],
+          "name": "FunctionDefinition"
+        },
+        {
+          "attributes":
+          {
+            "kind": "function",
+            "name": "getVX",
+            "stateMutability": "view",
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "",
+                    "type": "int256",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                },
+                {
+                  "attributes":
+                  {
+                    "name": "",
+                    "type": "int256",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "type": "tuple(int256,int256)"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "type": "int256",
+                            "value": "x"
+                          },
+                          "name": "Identifier"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "type": "int256",
+                            "value": "x"
+                          },
+                          "name": "Identifier"
+                        }
+                      ],
+                      "name": "TupleExpression"
+                    }
+                  ],
+                  "name": "Return"
+                }
+              ],
+              "name": "Block"
+            }
+          ],
+          "name": "FunctionDefinition"
+        }
+      ],
+      "name": "ContractDefinition"
+    }
+  ],
+  "name": "SourceUnit"
+}
