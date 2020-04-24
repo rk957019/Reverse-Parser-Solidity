@@ -1,0 +1,1410 @@
+{
+  "attributes":
+  {
+    "absolutePath": "Library.sol",
+    "exportedSymbols":
+    {
+      
+    }
+  },
+  "children":
+  [
+    {
+      "attributes":
+      {
+        "literals":
+        [
+          "solidity",
+          "0.6",
+          ".4"
+        ]
+      },
+      "name": "PragmaDirective"
+    },
+
+    {
+      "attributes":
+      {
+        "abstract": false,
+        "contractKind": "contract",
+        "name": "Library"
+      },
+
+      "children":
+      [
+        {
+          "attributes":
+          {
+            "isConstructor": false,
+            "kind": "function",
+            "name": "search",
+            "stateMutability": "pure",
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "arr",
+                    "storageLocation": "memory",
+                    "type": "int256[]"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "length": null,
+                        "type": "int256[]"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "name": "int",
+                            "type": "int256"
+                          },
+                          "name": "ElementaryTypeName"
+                        }
+                      ],
+                      "name": "ArrayTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                },
+                {
+                  "attributes":
+                  {
+                    "name": "arr_len",
+                    "storageLocation": "default",
+                    "type": "uint256",
+                    "value": null
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "uint",
+                        "type": "uint256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                },
+                {
+                  "attributes":
+                  {
+                    "name": "x",
+                    "storageLocation": "default",
+                    "type": "int256",
+                    "value": null
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "",
+                    "storageLocation": "default",
+                    "type": "int256",
+                    "value": null
+                   },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "name": "i",
+                            "storageLocation": "default",
+                            "type": "uint256",
+                            "value": null
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "name": "uint",
+                                "type": "uint256"
+                              },
+                              "name": "ElementaryTypeName"
+                            }
+                          ],
+                          "name": "VariableDeclaration"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "hexvalue": "30",
+                            "token": "number",
+                            "type": "int_const 0",
+                            "value": "0"
+                          },
+                          "name": "Literal"
+                        }
+                      ],
+                      "name": "VariableDeclarationStatement"
+                    },
+                    {
+                      "attributes":
+                      {
+                        "commonType":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "operator": "<",
+                        "type": "bool"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "type": "uint256",
+                            "value": "i"
+                          },
+                          "name": "Identifier"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "type": "uint256",
+                            "value": "arr_len"
+                          },
+                          "name": "Identifier"
+                        }
+                      ],
+                      "name": "BinaryOperation"
+                    },
+                    {
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "operator": "++",
+                            "type": "uint256"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "uint256",
+                                "value": "i"
+                              },
+                              "name": "Identifier"
+                            }
+                          ],
+                          "name": "UnaryOperation"
+                        }
+                      ],
+                      "name": "ExpressionStatement"
+                    },
+                    {
+                      
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            },
+                            "operator": "==",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "int256"
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "type": "int256[] memory",
+                                    "value": "arr"
+                                  },
+                                  "name": "Identifier"
+                                },
+                                {
+                                  "attributes":
+                                  {
+                                    "type": "uint256",
+                                    "type_conversion": true
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes":
+                                        [
+                                          {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        ],
+                                        "type": "type(uint256)"
+                                      },
+                                      "children":
+                                      [
+                                        {
+                                          "attributes":
+                                          {
+                                            "name": "uint",
+                                            "type": null
+                                          },
+                                          "name": "ElementaryTypeName"
+                                        }
+                                      ],
+                                      "name": "ElementaryTypeNameExpression"
+                                    },
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes": null,
+                                        "overloadedDeclarations":
+                                        [
+                                          null
+                                        ],
+                                        "type": "uint256",
+                                        "value": "i"
+                                      },
+                                      "name": "Identifier"
+                                    }
+                                  ],
+                                  "name": "FunctionCall"
+                                }
+                              ],
+                              "name": "IndexAccess"
+                            },
+                            {
+                              "attributes":
+                              {
+                                "type": "int256",
+                                "value": "x"
+                              },
+                              "name": "Identifier"
+                            }
+                          ],
+                          "name": "BinaryOperation"
+                        },
+                        {
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "int256",
+                                "type_conversion": true
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    ],
+                                    "type": "type(int256)"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "name": "int",
+                                        "type": null
+                                      },
+                                      "name": "ElementaryTypeName"
+                                    }
+                                  ],
+                                  "name": "ElementaryTypeNameExpression"
+                                },
+                                {
+                                  "attributes":
+                                  {
+                                    "type": "uint256",
+                                    "value": "i"
+                                  },
+                                  "name": "Identifier"
+                                }
+                              ],
+                              "name": "FunctionCall"
+                             }
+                          ],
+                          "name": "Return"
+                        }
+                      ],
+                      "name": "IfStatement"
+                    }
+                  ],
+                  "name": "ForStatement"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "operator": "-",
+                        "prefix": true,
+                        "type": "int_const -1"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "hexvalue": "31",
+                            "token": "number",
+                            "type": "int_const 1",
+                            "value": "1"
+                          },
+                          "name": "Literal"
+                        }
+                      ],
+                      "name": "UnaryOperation"
+                    }
+                  ],
+                  "name": "Return"
+                }
+              ],
+              "name": "Block"
+            }
+          ],
+          "name": "FunctionDefinition"
+        },
+        {
+          "attributes":
+          {
+            "isConstructor": false,
+            "kind": "function",
+            "name": "factorial",
+            "stateMutability": "pure",
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "num",
+                    "storageLocation": "default",
+                    "type": "int256",
+                    "value": null
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "",
+                    "type": "int256",
+                    "value": null
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "copyNum",
+                        "type": "int256",
+                        "value": null
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "name": "int",
+                            "type": "int256"
+                          },
+                          "name": "ElementaryTypeName"
+                        }
+                      ],
+                      "name": "VariableDeclaration"
+                    },
+                    {
+                      "attributes":
+                      {
+                        "type": "int256",
+                        "value": "num"
+                      },
+                      "name": "Identifier"
+                    }
+                  ],
+                  "name": "VariableDeclarationStatement"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "fact",
+                        "storageLocation": "default",
+                        "type": "int256",
+                        "value": null
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "name": "int",
+                            "type": "int256"
+                          },
+                          "name": "ElementaryTypeName"
+                        }
+                      ],
+                      "name": "VariableDeclaration"
+                    },
+                    {
+                      "attributes":
+                      {
+                        "hexvalue": "31",
+                        "token": "number",
+                        "type": "int_const 1",
+                        "value": "1"
+                      },
+                      "name": "Literal"
+                    }
+                  ],
+                  "name": "VariableDeclarationStatement"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "commonType":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        "operator": "<",
+                        "type": "bool"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "type": "int256",
+                            "value": "num"
+                          },
+                          "name": "Identifier"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "hexvalue": "30",
+                            "token": "number",
+                            "type": "int_const 0",
+                            "value": "0"
+                          },
+                          "name": "Literal"
+                        }
+                      ],
+                      "name": "BinaryOperation"
+                    },
+                    {
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "operator": "=",
+                            "type": "int256"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "int256",
+                                "value": "fact"
+                              },
+                              "name": "Identifier"                            },
+                            {
+                              "attributes":
+                              {
+                                "operator": "-",
+                                "prefix": true,
+                                "type": "int_const -1"
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "hexvalue": "31",
+                                    "token": "number",
+                                    "type": "int_const 1",
+                                    "value": "1"
+                                  },
+                                  "name": "Literal"
+                                }
+                              ],
+                              "name": "UnaryOperation"
+                            }
+                          ],
+                          "name": "Assignment"
+                        }
+                      ],
+                      "name": "ExpressionStatement"
+                    },
+                    {
+                      "attributes":
+                      {
+                        "falseBody": null
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            },
+                            "operator": ">",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "int256",
+                                "value": "num"
+                              },
+                              "name": "Identifier"
+                            },
+                            {
+                              "attributes":
+                              {
+                                "hexvalue": "31",
+                                "token": "number",
+                                "type": "int_const 1",
+                                "value": "1"
+                              },
+                              "name": "Literal"
+                            }
+                          ],
+                          "name": "BinaryOperation"
+                        },
+                        {
+                          "children":
+                          [
+                            {
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "commonType":
+                                    {
+                                      "typeIdentifier": "t_int256",
+                                      "typeString": "int256"
+                                    },
+                                    "operator": ">",
+                                    "type": "bool"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "type": "int256",
+                                        "value": "num"
+                                      },
+                                      "name": "Identifier"
+                                    },
+                                    {
+                                      "attributes":
+                                      {
+                                        "hexvalue": "31",
+                                        "token": "number",
+                                        "type": "int_const 1",
+                                        "value": "1"
+                                      },
+                                      "name": "Literal"
+                                    }
+                                  ],
+                                  "name": "BinaryOperation"
+                                },
+                                {
+                                  "children":
+                                  [
+                                    {
+                                      "children":
+                                      [
+                                        {
+                                          "attributes":
+                                          {
+                                            "operator": "=",
+                                            "type": "int256"
+                                          },
+                                          "children":
+                                          [
+                                            {
+                                              "attributes":
+                                              {
+                                                "type": "int256",
+                                                "value": "fact"
+                                              },
+                                              "name": "Identifier"
+                                            },
+                                            {
+                                              "attributes":
+                                              {
+                                                "commonType":
+                                                {
+                                                  "typeIdentifier": "t_int256",
+                                                  "typeString": "int256"
+                                                },
+                                                "operator": "*",
+                                                "type": "int256"
+                                              },
+                                              "children":
+                                              [
+                                                {
+                                                  "attributes":
+                                                  {
+                                                    "type": "int256",
+                                                    "value": "fact"
+                                                  },
+                                                  "name": "Identifier"
+                                                },
+                                                {
+                                                  "attributes":
+                                                  {
+                                                    "operator": "--",
+                                                    "prefix": false,
+                                                    "type": "int256"
+                                                  },
+                                                  "children":
+                                                  [
+                                                    {
+                                                      "attributes":
+                                                      {
+                                                        "type": "int256",
+                                                        "value": "num"
+                                                      },
+                                                      "name": "Identifier"
+                                                    }
+                                                  ],
+                                                  "name": "UnaryOperation"
+                                                }
+                                              ],
+                                              "name": "BinaryOperation"
+                                            }
+                                          ],
+                                          "name": "Assignment"
+                                        }
+                                      ],
+                                      "name": "ExpressionStatement"
+                                    }
+                                  ],
+                                  "name": "Block"
+                                }
+                              ],
+                              "name": "WhileStatement"
+                            }
+                          ],
+                          "name": "Block"
+                        }
+                      ],
+                      "name": "IfStatement"
+                    }
+                  ],
+                  "name": "IfStatement"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "type": "int256"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            },
+                            "operator": "==",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "int256",
+                                "value": "fact"
+                              },
+                              "name": "Identifier"
+                            },
+                            {
+                              "attributes":
+                              {
+                               "type": "int256",
+                               "type_conversion": false
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      {
+                                        "typeIdentifier": "t_int256",
+                                        "typeString": "int256"
+                                      }
+                                    ],
+                                    "type": "function (int256) pure returns (int256)",
+                                    "value": "verifyFactorial"
+                                  },
+                                  "name": "Identifier"
+                                },
+                                {
+                                  "attributes":
+                                  {
+                                    "type": "int256",
+                                    "value": "copyNum"
+                                  },
+                                  "name": "Identifier"
+                                }
+                              ],
+                              "name": "FunctionCall"
+                            }
+                          ],
+                          "name": "BinaryOperation"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "type": "int256",
+                            "value": "fact"
+                          },
+                          "name": "Identifier"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "operator": "-",
+                            "prefix": true,
+                            "type": "int_const -2"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "hexvalue": "32",
+                                "token": "number",
+                                "type": "int_const 2",
+                                "value": "2"
+                              },
+                              "name": "Literal"
+                            }
+                          ],
+                          "name": "UnaryOperation"
+                        }
+                      ],
+                      "name": "Conditional"
+                    }
+                  ],
+                  "name": "Return"
+                }
+              ],
+              "name": "Block"
+            }
+          ],
+          "name": "FunctionDefinition"
+        },
+        {
+          "attributes":
+          {
+            "isConstructor": false,
+            "kind": "function",
+            "name": "verifyFactorial",
+            "stateMutability": "pure",
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "num",
+                    "type": "int256",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "name": "",
+                    "type": "int256",
+                    "value": null
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "int",
+                        "type": "int256"
+                      },
+                      "name": "ElementaryTypeName"
+                    }
+                  ],
+                  "name": "VariableDeclaration"
+                }
+              ],
+              "name": "ParameterList"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "fact",
+                        "type": "int256",
+                        "value": null
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "name": "int",
+                            "type": "int256"
+                          },
+                          "name": "ElementaryTypeName"
+                        }
+                      ],
+                      "name": "VariableDeclaration"
+                    },
+                    {
+                      "attributes":
+                      {
+                        "hexvalue": "31",
+                        "token": "number",
+                        "type": "int_const 1",
+                        "value": "1"
+                      },
+                      "name": "Literal"
+                    }
+                  ],
+                  "name": "VariableDeclarationStatement"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "commonType":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        "operator": "<",
+                        "type": "bool"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "type": "int256",
+                            "value": "num"
+                          },
+                          "name": "Identifier"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "hexvalue": "30",
+                            "token": "number",
+                            "type": "int_const 0",
+                            "value": "0"
+                          },
+                          "name": "Literal"
+                        }
+                      ],
+                      "name": "BinaryOperation"
+                    },
+                    {
+                      "children":
+                      [
+                        {
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "operator": "=",
+                                "type": "int256"
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "type": "int256",
+                                    "value": "fact"
+                                  },
+                                  "name": "Identifier"
+                                },
+                                {
+                                  "attributes":
+                                  {
+                                    "operator": "-",
+                                    "prefix": true,
+                                    "type": "int_const -1"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "hexvalue": "31",
+                                        "token": "number",
+                                        "type": "int_const 1",
+                                        "value": "1"
+                                      },
+                                      "name": "Literal"
+                                    }
+                                  ],
+                                  "name": "UnaryOperation"
+                                }
+                              ],
+                              "name": "Assignment"
+                            }
+                          ],
+                          "name": "ExpressionStatement"
+                        }
+                      ],
+                      "name": "Block"
+                    },
+                    {
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            },
+                            "operator": ">",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "type": "int256",
+                                "value": "num"
+                              },
+                              "name": "Identifier"
+                            },
+                            {
+                              "attributes":
+                              {
+                                "hexvalue": "31",
+                                "token": "number",
+                                "type": "int_const 1",
+                                "value": "1"
+                              },
+                              "name": "Literal"
+                            }
+                          ],
+                          "name": "BinaryOperation"
+                        },
+                        {
+                          "children":
+                          [
+                            {
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "commonType":
+                                    {
+                                      "typeIdentifier": "t_int256",
+                                      "typeString": "int256"
+                                    },
+                                    "operator": ">",
+                                    "type": "bool"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "type": "int256",
+                                        "value": "num"
+                                      },
+                                      "name": "Identifier"
+                                    },
+                                    {
+                                      "attributes":
+                                      {
+                                        "hexvalue": "31",
+                                        "token": "number",
+                                        "type": "int_const 1",
+                                        "value": "1"
+                                      },
+                                      "name": "Literal"
+                                    }
+                                  ],
+                                  "name": "BinaryOperation"
+                                },
+                                {
+                                  "children":
+                                  [
+                                    {
+                                      "children":
+                                      [
+                                        {
+                                          "attributes":
+                                          {
+                                            "operator": "=",
+                                            "type": "int256"
+                                          },
+                                          "children":
+                                          [
+                                            {
+                                              "attributes":
+                                              {
+                                                "type": "int256",
+                                                "value": "fact"
+                                              },
+                                              "name": "Identifier"
+                                            },
+                                            {
+                                              "attributes":
+                                              {
+                                                "commonType":
+                                                {
+                                                  "typeIdentifier": "t_int256",
+                                                  "typeString": "int256"
+                                                },
+                                                "operator": "*",
+                                                "type": "int256"
+                                              },
+                                              "children":
+                                              [
+                                                {
+                                                  "attributes":
+                                                  {
+                                                    "type": "int256",
+                                                    "value": "fact"
+                                                  },
+                                                  "name": "Identifier"
+                                                },
+                                                {
+                                                  "attributes":
+                                                  {
+                                                    "type": "int256",
+                                                    "value": "num"
+                                                  },
+                                                  "name": "Identifier"
+                                                }
+                                              ],
+                                              "name": "BinaryOperation"
+                                            }
+                                          ],
+                                          "name": "Assignment"
+                                        }
+                                      ],
+                                      "name": "ExpressionStatement"
+                                    },
+                                    {
+                                      "children":
+                                      [
+                                        {
+                                          "attributes":
+                                          {
+                                            "operator": "=",
+                                            "type": "int256"
+                                          },
+                                          "children":
+                                          [
+                                            {
+                                              "attributes":
+                                              {
+                                                "type": "int256",
+                                                "value": "num"
+                                              },
+                                              "name": "Identifier"
+                                            },
+                                            {
+                                              "attributes":
+                                              {
+                                                "commonType":
+                                                {
+                                                  "typeIdentifier": "t_int256",
+                                                  "typeString": "int256"
+                                                },
+                                                "operator": "-",
+                                                "type": "int256"
+                                              },
+                                              "children":
+                                              [
+                                                {
+                                                  "attributes":
+                                                  {
+                                                    "type": "int256",
+                                                    "value": "num"
+                                                  },
+                                                  "name": "Identifier"
+                                                },
+                                                {
+                                                  "attributes":
+                                                  {
+                                                    "hexvalue": "31",
+                                                    "token": "number",
+                                                    "type": "int_const 1",
+                                                    "value": "1"
+                                                  },
+                                                  "name": "Literal"
+                                                }
+                                              ],
+                                              "name": "BinaryOperation"
+                                            }
+                                          ],
+                                          "name": "Assignment"
+                                        }
+                                      ],
+                                      "name": "ExpressionStatement"
+                                    }
+                                  ],
+                                  "name": "Block"
+                                }
+                              ],
+                              "name": "DoWhileStatement"
+                            }
+                          ],
+                          "name": "Block"
+                        },
+                        {
+                          "children":
+                          [
+                            {
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "operator": "=",
+                                    "type": "int256"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "type": "int256",
+                                        "value": "fact"
+                                      },
+                                      "name": "Identifier"
+                                    },
+                                    {
+                                      "attributes":
+                                      {
+                                        "hexvalue": "31",
+                                        "token": "number",
+                                        "type": "int_const 1",
+                                        "value": "1"
+                                      },
+                                      "name": "Literal"
+                                    }
+                                  ],
+                                  "name": "Assignment"
+                                }
+                              ],
+                              "name": "ExpressionStatement"
+                            }
+                          ],
+                          "name": "Block"
+                        }
+                      ],
+                      "name": "IfStatement"
+                    }
+                  ],
+                  "name": "IfStatement"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "type": "int256",
+                        "value": "fact"
+                      },
+                      "name": "Identifier"
+                    }
+                  ],
+                  "name": "Return"
+                }
+              ],
+              "name": "Block"
+            }
+          ],
+          "name": "FunctionDefinition"
+        }
+      ],
+      "name": "ContractDefinition"
+    }
+  ],
+  "name": "SourceUnit"
+}
+
